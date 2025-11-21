@@ -48,6 +48,10 @@ I enjoy exploring new technologies, building modern applications, and solving ch
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=giakietit&theme=tokyonight&hide_border=true" height="160"/>
 </p>
 
+## 📈 Contribution Graph
+<p align="center">
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=giakietit&theme=monokai" />
+</p>
 
 
 ## 🌐 Connect with Me
