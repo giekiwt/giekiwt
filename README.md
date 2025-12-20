@@ -29,17 +29,12 @@ I enjoy exploring new technologies, building modern applications, and solving ch
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
 </p>
 
----
-
-## 📊 GitHub Stats
+---## 📊 GitHub Stats
 
 <p align="center">
-  <!-- Stats -->
   <img src="https://github-readme-stats.vercel.app/api?username=giakietit&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="160" />
-  <!-- Top Languages -->
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=giakietit&layout=compact&theme=tokyonight&hide_border=true" height="160"/>
 </p>
-
 ---
 
 ## 🔥 GitHub Streak
