@@ -1,0 +1,56 @@
+name: Update Profile Stats
+
+on:
+  # Chạy theo lịch trình (ví dụ: 12 giờ một lần)
+  schedule:
+    - cron: '0 */12 * * *'
+  # Chạy thủ công khi cần
+  workflow_dispatch:
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      # Bước này là để tạo ra hình ảnh stats bằng cách sử dụng GH_TOKEN
+      # (Tôi đang giả định rằng bạn đang dùng thư viện stats của Anurag Hazra)
+      # Lưu ý: Các thư viện stats thường tự động nhận GH_TOKEN từ môi trường.
+      
+      - name: Setup Node.js (Cần thiết cho một số Actions)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Đây là bước quan trọng để làm mới README
+      # Chúng ta sẽ sử dụng một Action để cập nhật các thành phần trong README
+      - name: Generate and Update GitHub Stats
+        uses: lowlighter/metrics@latest
+        with:
+          # TOKEN được truyền vào môi trường chạy Action.
+          # Đây là cách duy nhất để sử dụng GH_TOKEN một cách an toàn.
+          token: ${{ secrets.GH_TOKEN }} 
+          
+          # Cấu hình cụ thể để hiển thị commit private
+          user: giakietit
+          plugin_isocalendar: yes # Đồ thị đóng góp (Contribution Graph)
+          plugin_isocalendar_duration: full-year
+          
+          # Cấu hình các Plugin khác nếu cần:
+          # plugin_introduction: yes
+          # plugin_languages: yes
+          # config_timezone: Asia/Ho_Chi_Minh
+          
+          # Output file name (Mặc định là README.md)
+          output_name: README.md
+          
+          # Bật tính năng hiển thị Private commits (Cần token)
+          config_committer_token: ${{ secrets.GH_TOKEN }}
+
+
+      - name: Commit changes (Cập nhật lại README sau khi tạo stats mới)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Automated: Update GitHub Stats (Private included)"
+          # Tự động đẩy code lên repository
