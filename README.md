@@ -33,17 +33,7 @@ I enjoy exploring new technologies, building modern applications, and solving ch
   <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
 </p>
 
----
 
-
-## 📊 GitHub Stats:
-<p align="center">
- <img src="https://github-readme-streak-stats.vercel.app/?user=giakietkevin&theme=catppuccin_mocha&hide_border=true&border_radius=12" alt="GitHub Streak" />
-</p>
-
-
-
----
 
 ## 🌐 Socials:
 <p align="center">
@@ -116,16 +106,7 @@ I enjoy exploring new technologies, building modern applications, and solving ch
 
 <br />
 
-<div align="center">
-  <img src="https://github-profile-maker.vercel.app/api/streak?username=giakietkevin&theme=catppuccin_mocha&hide_border=true&border_radius=12" alt="GitHub Streak" />
-</div>
-<div align="center">
-  <img src="https://github-profile-maker.vercel.app/api/activity?username=giakietkevin&theme=tokyonight&hide_border=true" alt="Activity Graph" />
-</div>
 
-<div align="center">
-  <img src="https://github-profile-maker.vercel.app/api/divider?bgType=gradient&thickness=2&alignment=center&bgSolidColor=CBA6F7&bgStartColor=CBA6F7&bgEndColor=94E2D5&bgGradientDirection=horizontal" alt="Divider" />
-</div>
 
 <h2 align="center">Connect with Me 🤝</h2>
 
